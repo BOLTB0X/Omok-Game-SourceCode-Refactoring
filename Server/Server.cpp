@@ -6,7 +6,7 @@ SOCKADDR_IN Server::serverAddress;
 int Server::nextID;
 vector<Client*> Server::connections;
 Util Server::util;
-
+ 
 void Server::enterClient(Client *client) {
 	char *sent = new char[256];
 	ZeroMemory(sent, 256);
