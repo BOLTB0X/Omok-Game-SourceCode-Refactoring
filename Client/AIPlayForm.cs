@@ -106,7 +106,7 @@ namespace Client
                 gp.DrawLine(p, i, rectSize / 2, i, rectSize * edgeCount - rectSize / 2);
             }
         }
-
+        //AI
         private void ai_Attack()
         {
             AlphaBetaPruning(0, -1000000, 1000000);
