@@ -1148,6 +1148,11 @@ namespace Client
             return count;
         }
 
+        private void AIPlayForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         /*------------- 현재 두려는 수의 가치를 판단하여 책정하는 부분 -------------*/
 
         private int evaluate(Horse horse)

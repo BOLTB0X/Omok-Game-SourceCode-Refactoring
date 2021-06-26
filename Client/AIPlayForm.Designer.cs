@@ -37,9 +37,10 @@
             // boardPicture
             // 
             this.boardPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(216)))));
-            this.boardPicture.Location = new System.Drawing.Point(12, 12);
+            this.boardPicture.Location = new System.Drawing.Point(17, 18);
+            this.boardPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.boardPicture.Name = "boardPicture";
-            this.boardPicture.Size = new System.Drawing.Size(500, 500);
+            this.boardPicture.Size = new System.Drawing.Size(714, 750);
             this.boardPicture.TabIndex = 0;
             this.boardPicture.TabStop = false;
             this.boardPicture.Paint += new System.Windows.Forms.PaintEventHandler(this.boardPicture_Paint);
@@ -47,9 +48,10 @@
             // 
             // playButton
             // 
-            this.playButton.Location = new System.Drawing.Point(643, 42);
+            this.playButton.Location = new System.Drawing.Point(919, 63);
+            this.playButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(100, 40);
+            this.playButton.Size = new System.Drawing.Size(143, 60);
             this.playButton.TabIndex = 1;
             this.playButton.Text = "게임 시작";
             this.playButton.UseVisualStyleBackColor = true;
@@ -57,23 +59,26 @@
             // 
             // status
             // 
-            this.status.Location = new System.Drawing.Point(558, 96);
+            this.status.Location = new System.Drawing.Point(797, 144);
+            this.status.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(272, 15);
+            this.status.Size = new System.Drawing.Size(389, 22);
             this.status.TabIndex = 2;
             this.status.Text = "게임을 시작해주세요.";
             this.status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AIPlayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 541);
+            this.ClientSize = new System.Drawing.Size(1234, 812);
             this.Controls.Add(this.status);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.boardPicture);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AIPlayForm";
             this.Text = "AIPlayForm";
+            this.Load += new System.EventHandler(this.AIPlayForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.boardPicture)).EndInit();
             this.ResumeLayout(false);
 
